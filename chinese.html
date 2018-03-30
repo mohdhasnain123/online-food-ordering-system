@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chinesemenu</title>
+	
+	<style>
+	label {
+      font-family: bebas;
+      font-color: white;
+    }
+
+    li{
+        font-size: 30px;
+        padding: 3px;
+    }
+    ul{
+        margin-left: 400px;
+        margin-top: 50px;
+
+    }
+</style>
+</head>
+
+<body style="background-color: grey;">
+
+<script>
+    function itemPrice1()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c1= theForm.elements["c1"];
+        if(c1.checked==true)
+        {
+            itemPrice=200;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice2()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c2= theForm.elements["c2"];
+        if(c2.checked==true)
+        {
+            itemPrice=250;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice3()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c3= theForm.elements["c3"];
+        if(c3.checked==true)
+        {
+            itemPrice=150;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice4()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c4= theForm.elements["c4"];
+        if(c4.checked==true)
+        {
+            itemPrice=200;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice5()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c5= theForm.elements["c5"];
+        if(c5.checked==true)
+        {
+            itemPrice=180;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice6()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c6= theForm.elements["c6"];
+        if(c6.checked==true)
+        {
+            itemPrice=150;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice7()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c7= theForm.elements["c7"];
+        if(c7.checked==true)
+        {
+            itemPrice=200;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice8()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c8= theForm.elements["c8"];
+        if(c8.checked==true)
+        {
+            itemPrice=200;
+        }
+
+        return itemPrice;
+    }
+    function itemPrice9()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c9= theForm.elements["c9"];
+        if(c9.checked==true)
+        {
+            itemPrice=250;
+        }
+
+        return itemPrice;
+    }
+     function itemPrice10()
+    {
+        var itemPrice=0;
+        var theForm= document.forms["myForm"];
+        var c10= theForm.elements["c10"];
+        if(c10.checked==true)
+        {
+            itemPrice=150;
+        }
+
+        return itemPrice;
+    }
+    
+
+</script>
+
+ <script>
+    function calculateTotal()
+{
+    //Here we get the total price by calling our function
+    //Each function returns a number so by calling them we add the values they return together
+    var total = itemPrice1()+itemPrice2()+itemPrice3()+itemPrice4()+itemPrice5()+
+    itemPrice6()+itemPrice7()+itemPrice8()+itemPrice9()+itemPrice10();
+    //display the result
+    document.getElementById('totalPrice').innerHTML = total;
+ 
+}
+    </script>
+
+
+
+<h1 style="color:white; font-family:bebas; text-align: center;border: 1px solid white;">CHINESE MENU</h1>
+
+<form id="myForm">
+<ul>
+<li>
+        <input type="checkbox" name="c1" id="c1"  />
+        <label for="c1">Schezwan Noodles Veg		Rs 200</label>
+</li>
+<li>
+        <input type="checkbox" name="c2" id="c2"  />
+        <label for="c2">Schezwan Noodles Non Veg	Rs 250</label>
+</li>
+<li>
+        <input type="checkbox" name="c3" id="c3" />
+        <label for="c3">Manchurian Veg (Grvay/Dry)	Rs 150</label>
+</li>
+<li>
+        <input type="checkbox" name="c4" id="c4" />
+        <label for="c4">Manchurian Non-Veg (Dry)	Rs 200</label>
+</li>
+<li>
+        <input type="checkbox" name="c5" id="c5" />
+        <label for="c5">Chicken Soup	Rs 180</label>
+</li>
+<li>
+        <input type="checkbox" name="c6" id="c6"  />
+        <label for="c6">Momos(Veg)	Rs 150</label>
+</li>
+<li>
+        <input type="checkbox" name="c7" id="c7" />
+        <label for="c7">Momos (Non-veg)	Rs 200</label>
+</li>
+<li>
+        <input type="checkbox" name="c8" id="c8"  />
+        <label for="c8">Fried Rice (Veg)	Rs 200</label>
+</li>
+<li>
+        <input type="checkbox" name="c9" id="c9"  />
+        <label for="c9">Fried Rice (Non-Veg)	Rs 250</label>
+</li>
+<li>
+        <input type="checkbox" name="c10" id="c10" />
+        <label for="c10">Schwezwan Wrap		Rs 150</label>
+</li>
+</ul>
+<input type="button" style="padding: 10px 20px;font-size: 20px;" name="total" value="total" onclick="calculateTotal()">
+<h1> Total price:</h1>
+<div id="totalPrice" style="font-size: 40px;"></div>
+
+</form>
+<a href="payment.html">CLICK HERE TO PROCEED FOR PAYMENNT</a>
+</body>
+</html>

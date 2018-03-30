@@ -1,0 +1,73 @@
+<html>
+<head>
+<title> User Signup Form</title>
+<script  src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Please fill Username");
+        return false;
+    }
+    var x = document.forms["myForm"]["fpassword"].value;
+    if (x == "") {
+        alert("Please fill Password");
+        return false;
+    }
+    var x = document.forms["myForm"]["ffname"].value;
+    if (x == "") {
+        alert("Please fill Fullname");
+        return false;
+    }
+    var x = document.forms["myForm"]["number"].value;
+    if (x == "") {
+        alert("Please fill Mobile No.");
+        return false;
+    }
+    var x = document.forms["myForm"]["email"].value;
+    if (x == "") {
+        alert("Please fill email");
+        return false;
+    }
+}
+</script>
+
+
+<style>
+body {background-image:url(p3.jpg); 
+    background-size: cover;
+
+      background-repeat:no-repeat;
+
+}
+
+div{
+    text-align:center;
+     padding: 100px;
+    font-size:30px;
+}
+</style>
+</head >
+<script>
+function myFunction() {
+    alert("Please click on Home button");
+}
+</script>
+<body>
+<font color="black" style="verdana">
+<div>
+<h1>User Signup Form</h1>
+<form name="myForm" action="http://127.0.0.1:8081/process_post" method="POST" >
+<b>Fullname :</b> <input type="text" id="ffname" name="ff" size="20px"> 
+<br><br><b>Mobile No. :</b> <input type="text" id="number" name="n" size="20px">
+<br><br><b>Email :</b> <input type="text" id="email" name="email" size="20px"> 
+<br><br><b>Username :</b> <input type="text" id="fname" name="f" size="20px"> 
+<br><br><b>Password : </b><input type="password" id="fpassword" name="g" size="20px">
+<br><br><b>Address : </b><input type="text" id="address" name="address" size="20px">
+<br><br><input type="reset" value="Reset">  <input type="submit" value="Submit" onclick= "myFunction()" size="20px">
+<a href="abc.html" style="color: black; padding-left: 20px">Home</a>
+</form>
+</div>
+</font>
+</body>
+</html>
